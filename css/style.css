@@ -1,15 +1,20 @@
 body {
-  font-family: "Cormorant Garamond","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
-  font-size: 14px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-size: 20px;
   line-height: 1.8;
   letter-spacing: .8px;
   color: #333;
+
+  background-image: url(../img/背景_パソコン.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
   transition: opacity .3s;
   text-decoration: none;
-  color: #16cec5;
+  color: #0099FF;
 }
 
 img {
@@ -49,12 +54,12 @@ li {
  見出し
 ---------------------------------*/
 .title {
-  font-size: 34px;
+  font-size: 50px;
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .1em;
-  color: #f5b5d5;
+  color: #333;
 }
 
 .lead {
@@ -77,17 +82,26 @@ li {
 }
 
 .header-title {
-  font-family: "Dancing Script", cursive;
-  font-size: 72px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-size: 100px;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #f5b5d5;
+  color: #333;
 }
 .header-subtitle {
-  font-family: "Amatic SC", cursive;
-  font-size: 30px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 30px;
+  letter-spacing: .08em;
+  color: #333;
+}
+.header-subtitle_1 {
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-size: 40px;
   line-height: 1;
   letter-spacing: .08em;
+  color: #333;
 }
 
 /*--------------------------------
@@ -106,14 +120,14 @@ li {
 }
 
 .sub-header-title {
-  font-family: "Dancing Script", cursive;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: 5px;
   color: #f5b5d5;
 }
 .sub-header-subtitle {
-  font-family: "Amatic SC", cursive;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: 16px;
   line-height: 1;
   letter-spacing: .08em;
@@ -141,12 +155,13 @@ li {
 }
 
 .gnav-item {
+  font-size: 30px;
   margin: 0 20px;
 }
 
 .gnav-item a {
   position: relative;
-  font-size: 18px;
+  /* font-size: 30px; */
   font-weight: bold;
   line-height: 1;
   display: inline-block;
@@ -189,13 +204,13 @@ li {
 }
 
 .works-name {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 8px;
 }
 
 .works-info {
-  font-size: 10px;
+  font-size: 18px;
 }
 
 /*--------------------------------
@@ -276,7 +291,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #fadcea;
+  background-color: #EEEEEE;
 }
 
 .page-top .material-icons-outlined {
@@ -289,11 +304,11 @@ li {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #efc4d8;
+  background-color: #DDDDDD;
 }
 
 .copyright {
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   color: #797979;
 }
@@ -389,6 +404,10 @@ li {
   .header-subtitle {
     font-size: 18px;
   }
+  .header-subtitle_1 {
+    font-size: 15px;
+  }
+
 
   /*  下層ページのheader */
   .sub-header-inner {
@@ -396,7 +415,7 @@ li {
   }
 
   .sub-header-title {
-    font-family: "Dancing Script", cursive;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
     font-size: 24px;
   }
   .sub-header-subtitle {
@@ -453,6 +472,13 @@ li {
   .skill-item:last-child {
     margin-bottom: 0;
   }
+  
+  #skill .skill-desc-title {
+    margin-bottom: 3px;
+    font-size:20px!important;
+    padding: 24px;
+    font-weight: bold;
+  }
 
   /* About */
   .profile {
@@ -477,4 +503,134 @@ li {
   .article {
     padding: 30px 0;
   }
+}
+
+/*--------------------------------
+ Skill
+---------------------------------*/
+.section .inner {
+  /* padding: 80px 10px; */
+  padding: 80px 10px 10px 0px;
+}
+
+.section .section-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section .section-title {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.section .section-desc {
+  text-align: center;
+}
+
+#skill .card-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#skill .card {
+  flex-basis: 46%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* #skill .card:first-child {
+  flex-basis: 100%;
+} */
+
+#skill .skill-icon {
+  flex-basis: 75px;
+}
+
+#skill .skill-icon img {
+  width: 75px;
+}
+
+#skill .skill-desc {
+  flex-basis: calc(100% - 75px - 30px);
+  text-align: left;
+}
+
+#skill .skill-desc-title {
+  margin-bottom: 3px;
+  font-size:25px;
+  padding: 24px;
+  font-weight: bold;
+}
+
+#skill .skill-desc-title i{
+  margin-right: 12px;
+}
+
+#skill .rate {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#skill .rate:before, #skill .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+
+#skill .rate:before {
+  color: #ddd;
+}
+
+#skill .rate:after {
+  color: #808080;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#skill .rate1:after {
+  width: 20px;
+}
+
+#skill .rate2:after {
+  width: 40px;
+}
+
+#skill .rate3:after {
+  width: 60px;
+}
+
+#skill .rate4:after {
+  width: 80px;
+}
+
+#skill .rate5:after {
+  width: 100px;
 }
