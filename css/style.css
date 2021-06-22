@@ -476,7 +476,7 @@ li {
   #skill .skill-desc-title {
     margin-bottom: 3px;
     font-size:20px!important;
-    padding: 24px;
+    padding: 24px 24px 0px 0px;
     font-weight: bold;
   }
 
@@ -579,7 +579,7 @@ li {
 #skill .skill-desc-title {
   margin-bottom: 3px;
   font-size:25px;
-  padding: 24px;
+  padding: 24px 24px 0px 0px;
   font-weight: bold;
 }
 
